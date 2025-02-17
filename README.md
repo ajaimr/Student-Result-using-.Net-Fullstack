@@ -28,10 +28,6 @@ Before running the application, ensure that you have the following installed:
 - **.NET 6.0** or later
 - **SQL Server** (or any other supported database)
 
-## Setup Instructions
 
-### Backend (.NET Web API)
-1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd <repository_name>
+
+
