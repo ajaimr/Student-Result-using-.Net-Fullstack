@@ -1,0 +1,31 @@
+<div class="maindiv">
+    
+    <div class="subdiv">
+    <div class="left">
+      <img src="img.jpg" alt="">
+    </div>
+    <div class="right">
+        <div class="container mt-5">
+            <form [formGroup]="fg">
+              <h2 class="mb-4">Login Form</h2>
+              <!-- Username -->
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="username" placeholder="Enter Register_No" formControlName="reg">
+                <label for="username">Register Number</label>
+              </div>
+              <!-- Password -->
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="password" formControlName="dob">
+                <label for="password">Date of Birth</label>
+              </div>
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary w-100" (click)="onSubmit()">Submit</button>
+            </form>
+            <div class="admin-link">
+                <a [routerLink]="['/admin']" class="text-decoration-none text-secondary">
+                  Login as Admin
+                </a>
+          </div>
+
+    </div>
+</div>

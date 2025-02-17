@@ -1,0 +1,38 @@
+.subdiv{
+    /* background-color:blue ; */
+    width: 1000px;
+    height: 400px;
+    border-radius: 11px;
+     overflow: hidden; /* make sure child not affect childs property */
+     display: flex;
+  
+}
+.maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* .form-floating .form-control {
+    height: calc(3rem + 2px);
+  }
+  .form-floating label {
+    padding: 0 0.5rem;
+  } */
+.right{
+    text-align: center;
+   width: 370px;
+    border: 10px solid rgb(232, 212, 225);
+    background-color: white;
+}
+.admin-link {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .maindiv {
+   /* background-color: rgba(181, 169, 182, 0.162); */
+    /* background-image: url('../../../public/img.jpg');
+    background-size: cover; /* Adjusts the background to cover the whole page */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat;
+  }

@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Result Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <!-- <h2 class="title text-center text-primary mb-5">Result Management System</h2> -->
+
+    <div class="result-card card shadow p-4">
+        <div class="card-body">
+            <p class="fw-bold">Student Name: {{ result.name }}</p>
+            <!-- <p><strong>Student Roll Id :</strong> </p> -->
+            <p class="fw-bold">Student Register No: {{ result.reg }}</p>
+
+            <table class="result-table table table-bordered text-center mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tamil</td>
+                        <td>{{ result.tamil }}</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>English</td>
+                        <td>{{ result.english }}</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Maths</td>
+                        <td>{{ result.maths }}</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Science</td>
+                        <td>{{ result.science }}</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Social</td>
+                        <td>{{ result.social }}</td>
+                    </tr>
+                    <tr class="table-info fw-bold">
+                        <td colspan="2">Total Marks</td>
+                        <td>{{ result.total }} out of 500</td>
+                    </tr>
+                    <!-- <tr>
+                        <td colspan="2"><strong>Percentage</strong></td>
+                        <td><strong></strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Download Result</strong></td>
+                        <td><a download>Download</a></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

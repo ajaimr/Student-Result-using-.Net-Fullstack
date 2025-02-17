@@ -1,0 +1,16 @@
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-weight: bold;
+  }
+  
+  .list-group-item {
+    font-size: 16px;
+  }
+  
+  .table {
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <!-- <h2>Student Result Management</h2> -->
+  
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Reg No</th>
+          <th>DOB</th>
+          <th>Tamil</th>
+          <th>English</th>
+          <th>Maths</th>
+          <th>Science</th>
+          <th>Social</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (student of students; track $index) {
+        <tr>
+          <td>{{ student.name }}</td>
+          <td>{{ student.reg }}</td>
+          <td>{{ student.dob }}</td>
+          <td>{{ student.tamil }}</td>
+          <td>{{ student.english }}</td>
+          <td>{{ student.maths }}</td>
+          <td>{{ student.science }}</td>
+          <td>{{ student.social }}</td>
+          <td>
+            <button class="btn btn-warning btn-sm mx-1" [routerLink]="['/edit',student.id]">Edit</button>
+            <button class="btn btn-danger btn-sm mx-1" (click)="onDelete(student.id)">Delete</button>
+          </td>
+        </tr>
+    }
+      </tbody>
+    </table>
+  
+    <!-- Update Form -->
+    <!-- <div *ngIf="selectedStudent">
+      <h3>Edit Student</h3>
+      <label>Name: <input [(ngModel)]="selectedStudent.name" class="form-control"></label>
+      <label>Reg No: <input [(ngModel)]="selectedStudent.regNo" class="form-control" disabled></label>
+      <label>DOB: <input [(ngModel)]="selectedStudent.dob" type="date" class="form-control"></label>
+      <label>Tamil: <input [(ngModel)]="selectedStudent.tamil" type="number" class="form-control"></label>
+      <label>English: <input [(ngModel)]="selectedStudent.english" type="number" class="form-control"></label>
+      <label>Maths: <input [(ngModel)]="selectedStudent.maths" type="number" class="form-control"></label>
+      <label>Science: <input [(ngModel)]="selectedStudent.science" type="number" class="form-control"></label>
+      <label>Social: <input [(ngModel)]="selectedStudent.social" type="number" class="form-control"></label>
+      <button class="btn btn-success" (click)="updateStudent()">Update</button>
+    </div> -->
+  </div>
+  
